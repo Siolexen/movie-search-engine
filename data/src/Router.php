@@ -6,11 +6,20 @@ class Router
 {
     private array $routes = [];
 
+    /**
+     * @param $path
+     * @param $callback
+     * @return void
+     */
     public function addRoute($path, $callback): void
     {
         $this->routes[$path] = $callback;
     }
 
+    /**
+     * @param $path
+     * @return void
+     */
     public function handleRequest($path): void
     {
         if (array_key_exists($path, $this->routes)) {

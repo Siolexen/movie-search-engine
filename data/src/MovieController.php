@@ -11,6 +11,10 @@ class MovieController
         $this->movieRecommender = $movieRecommender;
     }
 
+    /**
+     * @param array $params
+     * @return array
+     */
     public function handleRequest(array $params): array
     {
         $strategy = $params['strategy'] ?? 'random';

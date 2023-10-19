@@ -4,6 +4,10 @@ namespace App;
 
 class RandomMoviesStrategy implements RecommendationStrategyInterface
 {
+    /**
+     * @param array $movies
+     * @return array
+     */
     public function recommend(array $movies): array
     {
         shuffle($movies);

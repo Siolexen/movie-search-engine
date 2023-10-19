@@ -4,6 +4,10 @@ namespace App;
 
 class MoviesStartingWithWStrategy implements RecommendationStrategyInterface
 {
+    /**
+     * @param array $movies
+     * @return array
+     */
     public function recommend(array $movies): array
     {
         $result = [];
