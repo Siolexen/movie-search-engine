@@ -1,0 +1,6 @@
+.idea
+.roboci
+composer.phar
+composer.lock
+vendor
+logs
